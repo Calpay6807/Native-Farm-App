@@ -1,4 +1,13 @@
-import {Button, Dimensions, Image, StyleSheet, Text, View} from 'react-native';
+import {
+  Button,
+  Dimensions,
+  Image,
+  Pressable,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import React from 'react';
 
 const width = Dimensions.get('window').width;
@@ -18,9 +27,20 @@ const Info = () => {
       }}>
       <View style={{padding: 10}}>
         <Text style={{color: 'white', fontSize: 20, marginBottom: 5}}>
-          Street pets needs
+          Street pets needs. {'\n'} needs your help.
         </Text>
-        <Button title="Button" />
+        <TouchableOpacity
+          style={{
+            backgroundColor: 'white',
+            padding: 10,
+            color: '#9370DB',
+            fontSize: 20,
+            borderRadius: 10,
+            marginTop: 10,
+            marginBottom: 10,
+          }}>
+          <Text style={{textAlign: 'center'}}> Donate Now</Text>
+        </TouchableOpacity>
       </View>
       <View>
         <Image

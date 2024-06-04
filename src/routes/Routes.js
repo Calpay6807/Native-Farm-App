@@ -5,6 +5,8 @@ import SignIn from '../pages/signIn';
 import TabNavigator from './tabNavigator';
 import Home from '../pages/home';
 import AnimalDetail from '../pages/home/detail';
+import Gider from '../pages/farm/gider';
+import Gallery from '../pages/home/detail/gallery/Gallery';
 
 const Stack = createNativeStackNavigator();
 
@@ -33,6 +35,16 @@ export default function Routes() {
       <Stack.Screen
         name={'Animal-Detail'}
         component={AnimalDetail}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name={'Gider'}
+        component={Gider}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name={'Gallery'}
+        component={Gallery}
         options={{headerShown: false}}
       />
     </Stack.Navigator>
